@@ -1,0 +1,123 @@
+{
+    "Trento": {
+        "mm_data_path": [
+            "./Trento/Trento.mat",
+            "./Trento/Trento_lidar.mat"
+        ],
+        "gt_path": "./Trento/Trento_gt.mat",
+        "rgb": [30, 13, 1],
+
+        "n_pc": 8,
+        "patch_size": 9,
+        "n_neighbors": 50,
+        "n_superpixels": 5000,
+        "slic_compactness": 10.0,
+        "rate": 0.8,
+        "refine_k": 10,
+
+        "alpha_recon": 1,
+        "alpha_consist": 500,
+        "alpha_contrast": 100
+    },
+    "Augsburg": {
+        "mm_data_path": [
+            "../HSI_data/mm/Augsburg/data_HS_LR.mat",
+            "../HSI_data/mm/Augsburg/data_SAR_HR.mat",
+            "../HSI_data/mm/Augsburg/data_DSM.mat"
+        ],
+        "gt_path": "../HSI_data/mm/Augsburg/gt.mat",
+        "rgb": null,
+
+        "n_pc": 8,
+        "patch_size": 9,
+        "n_neighbors": 50,
+        "n_superpixels": 2000,
+        "rate": 0.8,
+        "refine_k": 10,
+
+        "alpha_recon": 1,
+        "alpha_consist": 1,
+        "alpha_contrast": 1
+    },
+    "Houston": {
+        "mm_data_path": [
+            "../HSI_data/mm/Houston/Houston2013_HSI.mat",
+            "../HSI_data/mm/Houston/Houston2013_DSM.mat"
+        ],
+        "gt_path": "../HSI_data/mm/Houston/Houston_gt.mat",
+        "rgb": [60, 28, 13],
+
+        "n_pc": 8,
+        "patch_size": 11,
+        "n_neighbors": 50,
+        "n_superpixels": 5000,
+        "rate": 0.8,
+        "refine_k": 10,
+
+        "alpha_recon": 1,
+        "alpha_consist": 1e4,
+        "alpha_contrast": 1
+    },
+    "MUUFL": {
+        "mm_data_path": [
+            "../HSI_data/mm/MUUFL/HSI.mat",
+            "../HSI_data/mm/MUUFL/LiDAR.mat"
+        ],
+        "gt_path": "../HSI_data/mm/MUUFL/gt.mat",
+        "rgb": null,
+
+        "n_pc": 8,
+        "patch_size": 9,
+        "n_neighbors": 25,
+        "n_superpixels": 3000,
+        "rate": 0.8,
+        "refine_k": 10,
+        
+        "alpha_recon": 1,
+        "alpha_consist": 10,
+        "alpha_contrast": 10
+    },
+    "Subregion": {
+        "mm_data_path": [
+            "../HSI_data/mm/Sub/MDAS-Sub1-HSI.mat",
+            "../HSI_data/mm/Sub/MDAS-Sub1-SAR.mat",
+            "../HSI_data/mm/Sub/MDAS-Sub1-MSI.mat",
+            "../HSI_data/mm/Sub/MDAS-Sub1-DSM.mat"
+        ],
+        "gt_path": "../HSI_data/mm/Sub/MDAS-Sub1-GT.mat",
+        "rgb": null,
+
+        "n_pc": 8,
+        "patch_size": 9,
+        "n_neighbors": 25,
+        "n_superpixels": 2000,
+        "rate": 0.8,
+        "refine_k": 10,
+
+        "alpha_recon": 1,
+        "alpha_consist": 1,
+        "alpha_contrast": 1
+    },
+
+    "seed": 0,
+    "dataset_name": "Trento",
+    "gpu_id": "0",
+    "fusion_type": "elementwise",
+    "lr": 0.001,
+    "n_epoches": 30,
+    "pretrain": false,
+    "remove_bkg": true,
+
+    "gae_n_enc_1": 128,
+    "gae_n_enc_2": 256,
+    "gae_n_enc_3": 512,
+    "gae_n_dec_1": 512,
+    "gae_n_dec_2": 256,
+    "gae_n_dec_3": 128,
+
+    "save_model": true,
+    "cache_step": 10,
+    "log_path": "./log",
+    "save_path": "./save",
+    "result_path": "./result"
+}
