@@ -1,7 +1,5 @@
 # Open-source code for the paper "Structure-Adaptive Multi-View Graph Clustering for Remote Sensing Data."
 
-## Citation
-
 If you find this work useful in your research, please cite our paper:
 
 ```bibtex
